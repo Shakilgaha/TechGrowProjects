@@ -52,6 +52,8 @@ export const Header = ({ setTheme }) => {
 
             </section>
 
+
+            {/* for mobile screen */}
             <ul className={` ${menu ? "flex flex-col " : "hidden"} absolute md:hidden bg-white p-5 w-screen gap-2  justify-between dark1`}>
                 <li>
                     <NavLink to={"/"}

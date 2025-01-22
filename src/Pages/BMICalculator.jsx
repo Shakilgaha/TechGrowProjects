@@ -8,20 +8,19 @@ export const BMICalculator = () => {
     const [result, setResult] = useState('');
 
 
-
     const handleCalculateBtn = () => {
 
-        //* return if the value Is Not Filled
+        //! return if the value Is Not Filled
         if (!weight || !feet) {
             setResult('Please enter valid weight and height');
             return;
         }
 
-        // * Converting The Feet Into Meter
+        //! Converting The Feet Into Meter
         const totalFeet = feet * 12;
         const heightInMeter = totalFeet * 0.025;
 
-        //* Calculating The BMI By Using Height And Weight 
+        //! Calculating The BMI By Using Height And Weight 
         const calculatedBmi = (weight / (heightInMeter * heightInMeter)).toFixed(2);
         setBmi(calculatedBmi);
 
@@ -30,14 +29,13 @@ export const BMICalculator = () => {
             setBmi(calculatedBmi);
         }
         else {
-            // console.log("invalid BMi Calculation");
             handleClearBtn()
             setBmi(null);
             alert("Invalid Input!! Please Check Input And Try Again");
             // setResult("Invalid BMi Input")
         }
 
-        //*  BMI Category
+        //! BMI Category
         if (calculatedBmi < 18.5) {
             setResult('Underweight');
         }
@@ -53,7 +51,7 @@ export const BMICalculator = () => {
 
     }
 
-    //* Split The Bmi Value In 2 Parts 
+    //! Split The Bmi Value In 2 Parts 
     const [integerPart, decimalPart] = bmi ? bmi.toString().split(".") : ["0", "00"];
     // console.log(integerPart)
     // console.log(decimalPart)

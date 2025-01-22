@@ -10,14 +10,12 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   const setTheme = () => {
-    console.log("1",darkMode)
 
     setDarkMode(!darkMode)
 
     console.log(darkMode)
     if (darkMode) {
       document.documentElement.classList.add('dark');
-      console.log("dark")
     } else {
       document.documentElement.classList.remove('dark')
     }
@@ -51,7 +49,7 @@ function App() {
   ])
 
   return (
-    <div className={` h-screen`}>
+    <div className="h-screen">
       <RouterProvider router={router}></RouterProvider>
     </div>
   )

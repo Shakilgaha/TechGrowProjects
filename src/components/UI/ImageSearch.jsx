@@ -16,10 +16,6 @@ export const ImageSearch = ({ search, setSearch , SearchImage}) => {
     }, [search])
 
   
-
-    // SHA256:x4oZa2ZaA2xN21ZKkhscshQV4yrVoELnFSDS1DT4aPI shakilgaha786@gmail.com
-
-
     return (
         <div className="w-screen max-w-[90rem] pb-6 div-center " >
             <input type="text"

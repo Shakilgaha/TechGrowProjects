@@ -1,7 +1,5 @@
-
 import { useState } from "react"
 import { StopWatchResult } from "../components/UI/StopWatchResult";
-
 
 
 export const StopWatch = () => {

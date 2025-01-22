@@ -12,6 +12,7 @@ export const ImageGallery = () => {
     const [Searched, setSearched] = useState("");
     const [loading, setLoading] = useState(true)
 
+
     //* Fetching Data From An Api
     const fetchData = async () => {
         try {
@@ -51,10 +52,10 @@ export const ImageGallery = () => {
         if (search.trim() !== "") {
             setLoading(false)
             const SearchedData = data.filter((records) => {
-                // console.log(records.alt);
+                
                 return records.alt?.toLowerCase().includes(search.toLowerCase());
             });
-            // console.log("Searched", Searched)
+           
             setSearched(SearchedData);
         }
     }
@@ -64,8 +65,10 @@ export const ImageGallery = () => {
         SearchImage();
     }, [search, data])
 
+
     //* If Loading Is True Than Show Loading
     if (loading) return <Loader />
+
 
     return (
         <div className="container div-center my-[6rem] mx-4 py-12 px-6 gap-4 text-white">

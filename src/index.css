@@ -26,6 +26,8 @@ body{
   @apply hover:text-violet-500 transition duration-500
 }
 
+
+/* for buttons  */
 .btn {
   @apply bg-violet-600 text-white text-2xl w-[100%] hover:bg-violet-700 font-semibold font-serif p-2 rounded-full transition duration-500;
 }
@@ -35,6 +37,8 @@ body{
     box-shadow: #7C3AED 0px 7px 15px 0px;
   }
 }
+
+/* for theme dark  */
 
 .dark1{
 
@@ -48,9 +52,9 @@ body{
 
 }
 
+
+
 /* BMI Calculator */
-
-
 
 .textbox-bmi {
   @apply px-2 py-1 outline-none font-sans text-violet-600 font-bold w-[100%] h-[80%] text-center text-7xl border-b-2 border-black dark:border-white dark:bg-gray-900 ;
@@ -69,7 +73,8 @@ label {
 }
 
 
-/* Image Gallary */
+
+/* Image Gallery */
 
 .btn-img {
   @apply bg-purple-500 hover:bg-purple-600  h-fit w-fit px-3 py-2 items-center transition duration-500;
@@ -84,7 +89,6 @@ label {
 .liked{
   @apply text-red-500 text-3xl ;
 }
-
 
 
 

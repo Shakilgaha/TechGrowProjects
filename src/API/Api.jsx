@@ -12,7 +12,7 @@ export const getApi = () => {
         }, 
         params : {
             query : 'nature',
-            per_page : 80
+            per_page : 50
             //* for fetch up to 100 img per request //* limit is 80 Image
         }
 
@@ -23,14 +23,3 @@ export const getApi = () => {
 
 
 
-/*
-//* pexels 
-const Api = "https://api.pexels.com/v1/curated?page=2&per_page=100";
-
-
-//*unslpesh
-const Api = "https://api.unsplash.com/photos/?client_id=ZQK1bbjfMvQTYW1bzZnemDpnKupxHkOKqe9sOQba9Iw&per_page=30";
-
-
-https://api.unsplash.com/photos/?client_id=YOUR_ACCESS_KEY
-*/
