@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply dark:bg-gray-950 dark:text-white
+}
+
+.container {
+  @apply max-w-[90rem] m-auto;
+}
+
+.div-center {
+  @apply flex flex-col justify-center items-center m-auto;
+}
+
+.active {
+  @apply text-violet-600 transition duration-700
+}
+
+.menu-hover {
+  @apply w-full py-2 flex h-full hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-500
+}
+
+.menu-li {
+  @apply hover:text-violet-500 transition duration-500
+}
+
+.btn {
+  @apply bg-violet-600 text-white text-2xl w-[100%] hover:bg-violet-700 font-semibold font-serif p-2 rounded-full transition duration-500;
+}
+
+.btn {
+  &:hover {
+    box-shadow: #7C3AED 0px 7px 15px 0px;
+  }
+}
+
+.dark1{
+
+  @apply bg-white text-black dark:bg-gray-900 dark:text-white dark:shadow-sm dark:shadow-gray-500
+
+}
+
+.dark2{
+
+  @apply bg-white text-black dark:bg-gray-900 dark:text-white
+
+}
+
+/* BMI Calculator */
+
+
+
+.textbox-bmi {
+  @apply px-2 py-1 outline-none font-sans text-violet-600 font-bold w-[100%] h-[80%] text-center text-7xl border-b-2 border-black dark:border-white dark:bg-gray-900 ;
+  @apply [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none;
+}
+
+.box-bmi {
+  @apply flex flex-col text-center p-2 rounded-lg dark:border dark:border-gray-700 shadow-lg;
+}
+.box-bmi-input{
+  @apply bg-white  dark:bg-gray-900 dark:text-white  w-[10rem]  md:w-[15rem] h-[10rem]
+}
+
+label {
+  @apply font-semibold;
+}
+
+
+/* Image Gallary */
+
+.btn-img {
+  @apply bg-purple-500 hover:bg-purple-600  h-fit w-fit px-3 py-2 items-center transition duration-500;
+}
+
+.btn-img {
+  &:hover {
+    box-shadow: #7C3AED 0px 4px 7px 0px;
+  }
+}
+
+.liked{
+  @apply text-red-500 text-3xl ;
+}
+
+
+
+
+/* Stop Watch */
+.box-StopWatch {
+  @apply flex bg-white text-center p-2 rounded-lg shadow-lg dark:border dark:border-gray-700;
+}
